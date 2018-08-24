@@ -1,14 +1,19 @@
 {application, shopit,
- [{description, "An OTP application"},
+ [{description, "ShopIT"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, { shopit_app, []}},
   {applications,
    [kernel,
     stdlib,
-    lager
+    lager,
+    inets,
+    crypto,
+    mochiweb,
+    webmachine
    ]},
-  {env,[]},
+  {env,[{web_ip, "0.0.0.0"},
+        {web_port, 8080}]},
   {modules, []},
 
   {maintainers, []},
