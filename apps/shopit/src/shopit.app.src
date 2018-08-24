@@ -10,7 +10,9 @@
     inets,
     crypto,
     mochiweb,
-    webmachine
+    webmachine,
+    jiffy,
+    uuid
    ]},
   {env,[{web_ip, "0.0.0.0"},
         {web_port, 8080}]},
