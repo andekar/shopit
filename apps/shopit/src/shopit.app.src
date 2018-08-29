@@ -12,11 +12,14 @@
     mochiweb,
     webmachine,
     jiffy,
-    uuid
+    uuid,
+    jsx,
+    mnesia,
+    ejson
    ]},
   {env,[{web_ip, "0.0.0.0"},
         {web_port, 8080}]},
-  {modules, []},
+  {modules, [common]},
 
   {maintainers, []},
   {licenses, ["Apache 2.0"]},

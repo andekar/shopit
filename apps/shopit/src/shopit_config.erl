@@ -8,7 +8,7 @@
 -spec dispatch() -> [webmachine_dispatcher:route()].
 dispatch() ->
     lists:flatten([
-        {[], shopit_resource, []}
+        {["shopit", '*'], shopit_resource, []}
     ]).
 
 web_config() ->
